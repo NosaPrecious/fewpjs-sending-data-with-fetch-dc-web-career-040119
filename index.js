@@ -14,22 +14,11 @@ function submitData(name, email){
   }
   .then(response => response.json())
   .then(jsonData => {
-    jsonData.forEach(userData)
+    document.body.innerHTML = 
     
   }).catch(error => {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
   }));
   
-}
-
-
-
-function userData(userInfo){
-  document.appendChild(div);
-  div.innerHTML += `${userInfo}<br>`;
-}
-
-function createDiv(){
-  let div = document.createElement('div');
 }
