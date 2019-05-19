@@ -24,5 +24,7 @@ function submitData(name, email){
 }
 
 function userData(userInfo){
-userInfo  
+  let div = document.createElement('div');
+  document.appendChild(div);
+  div.innerHTML += `${userInfo}<br>`;
 }
