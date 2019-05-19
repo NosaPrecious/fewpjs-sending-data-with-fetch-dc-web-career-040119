@@ -11,7 +11,7 @@ function submitData(name, email){
       name,
       email
     })
-  }
+  })
   .then(response => response.json())
   .then(jsonData => {
     document.body.innerHTML = jsonData["id"]
@@ -19,6 +19,6 @@ function submitData(name, email){
   }).catch(error => {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
-  }));
+  });
   
 }
