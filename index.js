@@ -13,9 +13,16 @@ function submitData(name, email){
     })
   }
   .then(response => response.json())
-  .then(jsonData => jsonData).catch(error => {
+  .then(jsonData => {
+    jsonData.forEach(userData)
+    
+  }).catch(error => {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
   }));
   
+}
+
+function userData(userInfo){
+userInfo  
 }
