@@ -23,8 +23,13 @@ function submitData(name, email){
   
 }
 
+
+
 function userData(userInfo){
-  let div = document.createElement('div');
   document.appendChild(div);
   div.innerHTML += `${userInfo}<br>`;
+}
+
+function createDiv(){
+  let div = document.createElement('div');
 }
