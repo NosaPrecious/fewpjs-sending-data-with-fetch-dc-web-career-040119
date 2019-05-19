@@ -11,11 +11,11 @@ function submitData( name, email ) {
         email
       } )
     } )
-    .then( function ( response ) {
-      return response.json()
+    .then( function ( resp ) {
+      return resp.json()
     } )
-    .then( function ( object ) {
-      document.body.innerHTML = object[ "id" ]
+    .then(jsonData => {
+      document.body.innerHTML = jsonData[ "id" ]
     } )
     .catch( function ( error ) {
       document.body.innerHTML = error.message
