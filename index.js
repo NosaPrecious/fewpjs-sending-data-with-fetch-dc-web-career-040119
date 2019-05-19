@@ -8,8 +8,14 @@ function submitData(name, email){
       "Accept" : "application/json"
     },
     body : JSON.stringify({
-      
+      username : name
+      email : email
     })
-  });
+  }
+  .then(response => response.json())
+  .then(jsonData => jsonData).catch(error => {
+    
+  })
+  );
   
 }
